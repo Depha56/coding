@@ -21,7 +21,7 @@ const app = express();
 app.use(express.json());
 
 // Use Swagger UI
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
 // Error handling middleware
